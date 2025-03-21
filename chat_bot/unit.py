@@ -2,7 +2,7 @@ from langchain_groq import ChatGroq
 api_key = "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"
 def text_gen(text):
     llm = ChatGroq(
-        model="mixtral-8x7b-32768",
+        model="llama3-8b-8192",
         temperature=0,
         max_tokens=256,  # Set a limit to prevent excessive token usage
         timeout=10,  # Avoid infinite waiting
